@@ -1,0 +1,49 @@
+<!-- <div [formGroup]="personalInfo">
+    <label>FirstName: </label>
+      <input formControlName="firstname"><br>
+    <label>LastName: </label>
+      <input formControlName="lastname">
+</div> -->
+
+
+
+<div [formGroup]='personalInfo'>
+    <div class="personal-container"> 
+    <p class="title">Personal Information</p>
+    <div class="inputs">
+        <div class="input-container">
+            <label for="firstname">First Name (optional)</label> 
+            <input type="text" name='firstname' formControlName='firstName'  />
+        </div>
+       <div class="input-container">
+        <label for="lastname">Last Name (optional)</label>
+        <input type="text" name="lastname" formControlName='lastName'/>
+       </div>
+       
+       <div class="input-container">
+        <label for="email">Email address</label>
+        <input type="email" formControlName='email' name="email"/>
+       </div>
+                  
+       <div class="input-container">
+        <label for="confirm-email">Confirm Email address</label>
+        <input type="email" formControlName='confirmEmail' name="confirm-email" required/>
+        </div>
+               
+    <div class="input-container-select">
+        <label for="language">Language</label>
+        <select formControlName='languages' name="language" (change)='selectedLanguage($event)'>
+            <option value="" disabled selected>Language</option>
+            <option *ngFor='let lang of languages' [ngValue]='lang'>{{lang}}</option>
+        </select>
+    </div>
+        
+
+        
+
+    </div>
+</div>
+   
+</div>
+<div class="line"></div>
+

@@ -1,0 +1,29 @@
+<div class="assign-role">
+    <p class="title">Assign a role</p>
+
+     <ul >
+        <li [class.selected]='role === selectedRole' *ngFor="let role of roles let i = index" [attr.data-index]="i"  (click)='onSelect($event, role)' [formGroup]="assignRole">
+            <p class="role-title">{{role.role}}</p>
+            <p class="role-task">{{role.task}}</p>
+        </li>
+    </ul> 
+    <!-- <div [formGroup]="assignRole">
+        <div class="roles-block" formControlName='roles'>
+            <p>Admin</p>
+            <p>Can edit and view everything in the application</p>
+        </div>
+        <div class="roles-block">
+            <p>Admin</p>
+            <p>Can edit and view everything in the application</p>
+        </div>
+        <div class="roles-block">
+            <p>Admin</p>
+            <p>Can edit and view everything in the application</p>
+        </div>
+    </div>
+    <p class="learn-more">Don’t understand how the roles work? <a href="#">Learn more about it
+    </a></p> -->
+</div>
+
+
+<div class="line"></div>

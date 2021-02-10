@@ -1,0 +1,173 @@
+<div class="custom-permissions">
+    <p class="title">Custom Access Permissions</p>
+
+    <!-- FIRST TABLE -->
+    <div class="container">
+        <div class="bar">
+            <div class="folder">
+                <div class="section">
+                    <img src="../../assets/icons/people.svg" alt='team' /><span>Ontwikkel </span>
+                </div>
+                <span class="slash"> / </span>
+                <div class="section">
+                    <img src="../../assets/icons/folder.svg" alt='team' /><span>Team A</span>
+                </div>
+            </div>
+            <button type="button" class="permissions-btn" (click)="toggleFirstTable()">{{buttonName}} PERMISSIONS & ACCESS</button>
+        </div>
+    
+        <!-- *ngIf="show" -->
+        <div class="content" *ngIf="showTableOne" >
+            <div class="permissions-content-heading">
+                <img src="../../assets/icons/dashboard.svg" alt="dashboard" />
+                <p class="permissions-title">DASHBOARD ACCESS</p>
+            </div>
+    
+            <table>
+                <tr>
+                  <th>TOUCHPOINT</th>
+                  <th>DASHBOARD</th>
+                </tr>
+                <tr>
+                  <td>
+                      <img src="../../assets/icons/email-touchpoint.svg" alt="email touchpoint" />
+                      Touchpoint email 1</td>
+                  <td>
+                    <input type="checkbox" id="default" name="default" value="default">
+                    <label for="default"> Default</label><br>
+                    <input type="checkbox" id="nps" name="nps" value="nps">
+                    <label for="nps"> Custom NPS dashboard</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <img src="../../assets/icons/email-touchpoint.svg" alt="email touchpoint" />
+                      Touchpoint email 2</td>
+                  <td>
+                    <input type="checkbox" id="default2" name="default2" value="default2">
+                    <label for="default2"> Default</label>
+                  </td>
+                </tr>
+              </table>
+
+            <div class="permissions-content-heading">
+                <img src="../../assets/icons/report.svg" alt="dashboard" />
+                <p class="permissions-title">REPORTS</p>
+            </div> 
+
+                
+            <table>
+                <tr>
+                  <th>TOUCHPOINT</th>
+                  <th>DASHBOARD</th>
+                </tr>
+                <tr>
+                  <td>
+                      <img src="../../assets/icons/email-touchpoint.svg" alt="email touchpoint" />
+                      Touchpoint email 1</td>
+                  <td>
+                    <input type="checkbox" id="default" name="default" value="default">
+                    <label for="default"> Default</label><br>
+                    <input type="checkbox" id="nps" name="nps" value="nps">
+                    <label for="nps"> Custom NPS dashboard</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <img src="../../assets/icons/email-touchpoint.svg" alt="email touchpoint" />
+                      Touchpoint email 2</td>
+                  <td>
+                    <input type="checkbox" id="default2" name="default2" value="default2">
+                    <label for="default2"> Default</label>
+                  </td>
+                </tr>
+              </table>
+        </div>
+    </div>
+    
+    <!-- SECOND TABLE -->
+    <div class="container">
+        <div class="bar">
+            <div class="folder">
+                <div class="section">
+                    <img src="../../assets/icons/people.svg" alt='team' /><span>Client Team </span>
+                </div>
+                <span class="slash"> / </span>
+                <div class="section">
+                    <img src="../../assets/icons/folder.svg" alt='team' /><span>Team B</span>
+                </div>
+            </div>
+            <button type="button" class="permissions-btn" (click)="toggleSecondTable()">{{buttonName}} PERMISSIONS & ACCESS</button>
+        </div>
+    
+        <!-- *ngIf="show" -->
+        <div class="content" *ngIf="showTableTwo" >
+            <div class="permissions-content-heading">
+                <img src="../../assets/icons/dashboard.svg" alt="dashboard" />
+                <p class="permissions-title">DASHBOARD ACCESS</p>
+            </div>
+    
+            <table>
+                <tr>
+                  <th>TOUCHPOINT</th>
+                  <th>DASHBOARD</th>
+                </tr>
+                <tr>
+                  <td>
+                      <img src="../../assets/icons/email-touchpoint.svg" alt="email touchpoint" />
+                      Touchpoint email 1</td>
+                  <td>
+                    <input type="checkbox" id="default" name="default" value="default">
+                    <label for="default"> Default</label><br>
+                    <input type="checkbox" id="nps" name="nps" value="nps">
+                    <label for="nps"> Custom NPS dashboard</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <img src="../../assets/icons/email-touchpoint.svg" alt="email touchpoint" />
+                      Touchpoint email 2</td>
+                  <td>
+                    <input type="checkbox" id="default2" name="default2" value="default2">
+                    <label for="default2"> Default</label>
+                  </td>
+                </tr>
+              </table>
+
+            <div class="permissions-content-heading">
+                <img src="../../assets/icons/report.svg" alt="dashboard" />
+                <p class="permissions-title">REPORTS</p>
+            </div> 
+
+                
+            <table>
+                <tr>
+                  <th>TOUCHPOINT</th>
+                  <th>DASHBOARD</th>
+                </tr>
+                <tr>
+                  <td>
+                      <img src="../../assets/icons/email-touchpoint.svg" alt="email touchpoint" />
+                      Touchpoint email 1</td>
+                  <td>
+                    <input type="checkbox" id="default" name="default" value="default">
+                    <label for="default"> Default</label><br>
+                    <input type="checkbox" id="nps" name="nps" value="nps">
+                    <label for="nps"> Custom NPS dashboard</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <img src="../../assets/icons/email-touchpoint.svg" alt="email touchpoint" />
+                      Touchpoint email 2</td>
+                  <td>
+                    <input type="checkbox" id="default2" name="default2" value="default2">
+                    <label for="default2"> Default</label>
+                  </td>
+                </tr>
+              </table>
+        </div>
+    </div>
+</div>
+
+

@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files. Worked by Erika Hendsel */
+@font-face {
+  font-family: Sofia-Regular;
+  src: url(../src/assets/fonts/SofiaProRegularAz.otf) format("opentype");
+}
+@font-face {
+  font-family: Sofia-Light;
+  src: url(../src/assets/fonts/SofiaProLightAz.otf) format("opentype");
+}
+@font-face {
+  font-family: Sofia-Bold;
+  src: url(../src/assets/fonts/SofiaProBoldAz.otf) format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sofia-Light", "arial", sans-serif;
+}
+.title {
+  letter-spacing: 0px;
+  color: #003161;
+  text-transform: uppercase;
+  font-family: "Sofia-Bold", "arial", sans-serif;
+  font-size: 18px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: rgb(235, 235, 235);
+}
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,53 @@
+.add-new-user {
+  background: transparent linear-gradient(0deg, #3c1780 0%, #286cf3 100%) 0% 0%
+    no-repeat padding-box;
+}
+.container {
+  width: 90%;
+  background: #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+p {
+  line-height: 16px;
+}
+
+.save-user {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background: #f2f2f2;
+  color: #003161;
+  padding: 1em;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+
+    .buttons {
+      margin-top: 1em;
+    }
+  }
+}
+button {
+  font-family: "Sofia-Bold";
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+.save-btn {
+  padding: 1em 2em;
+  border: none;
+  background: #26cc5b 0% 0% no-repeat padding-box;
+  border-radius: 100px;
+  opacity: 1;
+  color: white;
+}
+.cancel-btn {
+  border: none;
+  background: transparent;
+  color: #006cff;
+  margin-right: 1em;
+}

@@ -1,0 +1,68 @@
+li.selected {
+  color: white;
+  border: 2px solid #006bff;
+  position: relative;
+
+  p {
+    &::after {
+      content: url("../../assets/icons/check.svg");
+      position: absolute;
+      background-size: 100px 20px;
+      display: inline-block;
+      background: #006bff;
+      top: 0;
+      right: 0;
+      clip-path: polygon(100% 0, 0 0, 100% 100%);
+      padding: 0.2em 0.3em 1.5em 1.6em;
+    }
+  }
+}
+.assign-role {
+  padding: 3em 2em;
+  .title {
+    margin-bottom: 1.3em;
+  }
+  @media only screen and (min-width: 750px) {
+    padding: 3em 4em;
+  }
+  @media only screen and (min-width: 1200px) {
+    padding: 3em 6em;
+  }
+  @media only screen and (min-width: 1500px) {
+    padding: 3em 10em;
+  }
+}
+ul {
+  position: relative;
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+  list-style: none;
+  @media only screen and (min-width: 600px) {
+    flex-direction: row;
+  }
+}
+li {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #dedede;
+  border-radius: 1px;
+  padding: 1.5em;
+  cursor: pointer;
+}
+
+.role-title {
+  font-family: "Sofia-regular";
+  color: #003161;
+  margin-bottom: 0.3em;
+  pointer-events: none;
+}
+.role-task {
+  color: #636363;
+  pointer-events: none;
+}
+.learn-more {
+  margin-top: 1.3em;
+}

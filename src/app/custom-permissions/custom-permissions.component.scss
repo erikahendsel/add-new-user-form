@@ -1,0 +1,121 @@
+.content {
+  padding: 1em 0 1.5em 0;
+}
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #003161;
+}
+th,
+td {
+  text-align: left;
+}
+tr {
+  padding: 0.3em;
+}
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+td:first-child {
+  padding-left: 20px;
+  padding-right: 0;
+  @media only screen and (max-width: 600px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+th {
+  letter-spacing: 1px;
+  color: #adadad;
+  font-weight: 300;
+  font-size: 12px;
+  height: 20px;
+}
+tr:nth-child(2) {
+  background: #f8f8f8;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.container {
+  background: #efefef;
+  padding: 0 1.5em;
+  margin-bottom: 1em;
+}
+
+.custom-permissions {
+  padding: 3em 2em;
+
+  @media only screen and (min-width: 750px) {
+    padding: 3em 4em;
+  }
+  @media only screen and (min-width: 1200px) {
+    padding: 3em 6em;
+  }
+  @media only screen and (min-width: 1500px) {
+    padding: 3em 10em;
+  }
+}
+.title {
+  margin-bottom: 1em;
+}
+
+.bar {
+  .folder {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+
+    img {
+      margin-right: 5px;
+    }
+    .slash {
+      color: #006cff;
+      font-size: 22px;
+    }
+  }
+  .permissions-btn {
+    border: none;
+    background: transparent;
+    color: #006cff;
+    font-family: "Sofia-Bold";
+    outline: none;
+    cursor: pointer;
+  }
+  @media only screen and (min-width: 600px) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1em 0;
+    border-bottom: 1px solid rgb(219, 219, 219);
+  }
+  @media only screen and (max-width: 600px) {
+    .folder {
+      padding-top: 0.5em;
+    }
+    .permissions-btn {
+      padding-top: 0.2em;
+      padding-bottom: 0.5em;
+    }
+  }
+}
+.permissions-content-heading {
+  display: flex;
+  font-size: 18px;
+  align-items: flex-end;
+  gap: 0.4em;
+  padding: 1em 0;
+  p {
+    font-family: "Sofia-Bold";
+    color: #003161;
+  }
+  img {
+    width: 1.5em;
+  }
+}
